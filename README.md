@@ -1,6 +1,9 @@
 # MyoAdapt
 
 **An open-source, CPU-native, research-only Python platform for surface electromyography (sEMG) pattern recognition, evaluation, and controlled deployment experiments.**
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22096284.svg)](https://doi.org/10.5281/zenodo.22096284)
+
+🚀 **[Live Interactive Demo](https://myoadapt-qussai-bme.streamlit.app/)
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
