@@ -1,0 +1,587 @@
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools>=64
+  - wheel
+* Getting build dependencies for sdist...
+/tmp/build-env-_fqfe2wg/lib/python3.12/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+!!
+
+        ********************************************************************************
+        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+        By 2027-Feb-18, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  corresp(dist, value, root_dir)
+/tmp/build-env-_fqfe2wg/lib/python3.12/site-packages/setuptools/config/_apply_pyprojecttoml.py:61: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: Apache Software License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  dist._finalize_license_expression()
+/tmp/build-env-_fqfe2wg/lib/python3.12/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: Apache Software License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+running egg_info
+writing myoadapt.egg-info/PKG-INFO
+writing dependency_links to myoadapt.egg-info/dependency_links.txt
+writing entry points to myoadapt.egg-info/entry_points.txt
+writing requirements to myoadapt.egg-info/requires.txt
+writing top-level names to myoadapt.egg-info/top_level.txt
+reading manifest file 'myoadapt.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+adding license file 'NOTICE'
+writing manifest file 'myoadapt.egg-info/SOURCES.txt'
+* Building sdist...
+/tmp/build-env-_fqfe2wg/lib/python3.12/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+!!
+
+        ********************************************************************************
+        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+        By 2027-Feb-18, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  corresp(dist, value, root_dir)
+/tmp/build-env-_fqfe2wg/lib/python3.12/site-packages/setuptools/config/_apply_pyprojecttoml.py:61: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: Apache Software License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  dist._finalize_license_expression()
+/tmp/build-env-_fqfe2wg/lib/python3.12/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: Apache Software License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+running sdist
+running egg_info
+writing myoadapt.egg-info/PKG-INFO
+writing dependency_links to myoadapt.egg-info/dependency_links.txt
+writing entry points to myoadapt.egg-info/entry_points.txt
+writing requirements to myoadapt.egg-info/requires.txt
+writing top-level names to myoadapt.egg-info/top_level.txt
+reading manifest file 'myoadapt.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+adding license file 'NOTICE'
+writing manifest file 'myoadapt.egg-info/SOURCES.txt'
+running check
+creating myoadapt-2.0.0
+creating myoadapt-2.0.0/myoadapt
+creating myoadapt-2.0.0/myoadapt.egg-info
+creating myoadapt-2.0.0/myoadapt/adaptation
+creating myoadapt-2.0.0/myoadapt/api
+creating myoadapt-2.0.0/myoadapt/cli
+creating myoadapt-2.0.0/myoadapt/data
+creating myoadapt-2.0.0/myoadapt/deployment
+creating myoadapt-2.0.0/myoadapt/evaluation
+creating myoadapt-2.0.0/myoadapt/features
+creating myoadapt-2.0.0/myoadapt/models
+creating myoadapt-2.0.0/myoadapt/tasks
+creating myoadapt-2.0.0/myoadapt/tracking
+creating myoadapt-2.0.0/myoadapt/ui
+creating myoadapt-2.0.0/myoadapt/ui/pages
+copying files to myoadapt-2.0.0...
+copying LICENSE -> myoadapt-2.0.0
+copying NOTICE -> myoadapt-2.0.0
+copying README.md -> myoadapt-2.0.0
+copying pyproject.toml -> myoadapt-2.0.0
+copying myoadapt/__init__.py -> myoadapt-2.0.0/myoadapt
+copying myoadapt/config.py -> myoadapt-2.0.0/myoadapt
+copying myoadapt/reproducibility.py -> myoadapt-2.0.0/myoadapt
+copying myoadapt.egg-info/PKG-INFO -> myoadapt-2.0.0/myoadapt.egg-info
+copying myoadapt.egg-info/SOURCES.txt -> myoadapt-2.0.0/myoadapt.egg-info
+copying myoadapt.egg-info/dependency_links.txt -> myoadapt-2.0.0/myoadapt.egg-info
+copying myoadapt.egg-info/entry_points.txt -> myoadapt-2.0.0/myoadapt.egg-info
+copying myoadapt.egg-info/requires.txt -> myoadapt-2.0.0/myoadapt.egg-info
+copying myoadapt.egg-info/top_level.txt -> myoadapt-2.0.0/myoadapt.egg-info
+copying myoadapt/adaptation/__init__.py -> myoadapt-2.0.0/myoadapt/adaptation
+copying myoadapt/adaptation/adversarial.py -> myoadapt-2.0.0/myoadapt/adaptation
+copying myoadapt/adaptation/coral.py -> myoadapt-2.0.0/myoadapt/adaptation
+copying myoadapt/adaptation/ea.py -> myoadapt-2.0.0/myoadapt/adaptation
+copying myoadapt/adaptation/sa.py -> myoadapt-2.0.0/myoadapt/adaptation
+copying myoadapt/adaptation/tca.py -> myoadapt-2.0.0/myoadapt/adaptation
+copying myoadapt/api/__init__.py -> myoadapt-2.0.0/myoadapt/api
+copying myoadapt/api/rest.py -> myoadapt-2.0.0/myoadapt/api
+copying myoadapt/api/websocket.py -> myoadapt-2.0.0/myoadapt/api
+copying myoadapt/cli/__init__.py -> myoadapt-2.0.0/myoadapt/cli
+copying myoadapt/cli/main.py -> myoadapt-2.0.0/myoadapt/cli
+copying myoadapt/data/__init__.py -> myoadapt-2.0.0/myoadapt/data
+copying myoadapt/data/loaders.py -> myoadapt-2.0.0/myoadapt/data
+copying myoadapt/data/meta_loaders.py -> myoadapt-2.0.0/myoadapt/data
+copying myoadapt/data/preprocessing.py -> myoadapt-2.0.0/myoadapt/data
+copying myoadapt/data/splits.py -> myoadapt-2.0.0/myoadapt/data
+copying myoadapt/data/synthetic_augmentation.py -> myoadapt-2.0.0/myoadapt/data
+copying myoadapt/deployment/__init__.py -> myoadapt-2.0.0/myoadapt/deployment
+copying myoadapt/deployment/hardware_bench.py -> myoadapt-2.0.0/myoadapt/deployment
+copying myoadapt/deployment/onnx_export.py -> myoadapt-2.0.0/myoadapt/deployment
+copying myoadapt/deployment/realtime.py -> myoadapt-2.0.0/myoadapt/deployment
+copying myoadapt/deployment/shap_reports.py -> myoadapt-2.0.0/myoadapt/deployment
+copying myoadapt/deployment/trust_scores.py -> myoadapt-2.0.0/myoadapt/deployment
+copying myoadapt/evaluation/__init__.py -> myoadapt-2.0.0/myoadapt/evaluation
+copying myoadapt/evaluation/calibration.py -> myoadapt-2.0.0/myoadapt/evaluation
+copying myoadapt/evaluation/demographic_fairness.py -> myoadapt-2.0.0/myoadapt/evaluation
+copying myoadapt/evaluation/diagrams.py -> myoadapt-2.0.0/myoadapt/evaluation
+copying myoadapt/evaluation/drift_detection.py -> myoadapt-2.0.0/myoadapt/evaluation
+copying myoadapt/evaluation/electrode_shift.py -> myoadapt-2.0.0/myoadapt/evaluation
+copying myoadapt/evaluation/fairness.py -> myoadapt-2.0.0/myoadapt/evaluation
+copying myoadapt/evaluation/fatigue.py -> myoadapt-2.0.0/myoadapt/evaluation
+copying myoadapt/evaluation/hyperopt.py -> myoadapt-2.0.0/myoadapt/evaluation
+copying myoadapt/evaluation/lodo.py -> myoadapt-2.0.0/myoadapt/evaluation
+copying myoadapt/evaluation/loso.py -> myoadapt-2.0.0/myoadapt/evaluation
+copying myoadapt/evaluation/metrics.py -> myoadapt-2.0.0/myoadapt/evaluation
+copying myoadapt/evaluation/model_card.py -> myoadapt-2.0.0/myoadapt/evaluation
+copying myoadapt/evaluation/paper_reports.py -> myoadapt-2.0.0/myoadapt/evaluation
+copying myoadapt/evaluation/reports.py -> myoadapt-2.0.0/myoadapt/evaluation
+copying myoadapt/evaluation/statistics.py -> myoadapt-2.0.0/myoadapt/evaluation
+copying myoadapt/evaluation/zero_shot.py -> myoadapt-2.0.0/myoadapt/evaluation
+copying myoadapt/features/__init__.py -> myoadapt-2.0.0/myoadapt/features
+copying myoadapt/features/correlation.py -> myoadapt-2.0.0/myoadapt/features
+copying myoadapt/features/frequency_domain.py -> myoadapt-2.0.0/myoadapt/features
+copying myoadapt/features/histograms.py -> myoadapt-2.0.0/myoadapt/features
+copying myoadapt/features/minirocket.py -> myoadapt-2.0.0/myoadapt/features
+copying myoadapt/features/registry.py -> myoadapt-2.0.0/myoadapt/features
+copying myoadapt/features/time_domain.py -> myoadapt-2.0.0/myoadapt/features
+copying myoadapt/features/time_frequency.py -> myoadapt-2.0.0/myoadapt/features
+copying myoadapt/models/__init__.py -> myoadapt-2.0.0/myoadapt/models
+copying myoadapt/models/base.py -> myoadapt-2.0.0/myoadapt/models
+copying myoadapt/models/classical.py -> myoadapt-2.0.0/myoadapt/models
+copying myoadapt/models/cnn1d.py -> myoadapt-2.0.0/myoadapt/models
+copying myoadapt/models/emg_foundation.py -> myoadapt-2.0.0/myoadapt/models
+copying myoadapt/models/lite_dan.py -> myoadapt-2.0.0/myoadapt/models
+copying myoadapt/models/waveformer.py -> myoadapt-2.0.0/myoadapt/models
+copying myoadapt/tasks/__init__.py -> myoadapt-2.0.0/myoadapt/tasks
+copying myoadapt/tasks/continuous.py -> myoadapt-2.0.0/myoadapt/tasks
+copying myoadapt/tasks/intent_detection.py -> myoadapt-2.0.0/myoadapt/tasks
+copying myoadapt/tasks/pose_regression.py -> myoadapt-2.0.0/myoadapt/tasks
+copying myoadapt/tasks/semantic_retrieval.py -> myoadapt-2.0.0/myoadapt/tasks
+copying myoadapt/tracking/__init__.py -> myoadapt-2.0.0/myoadapt/tracking
+copying myoadapt/tracking/local_tracker.py -> myoadapt-2.0.0/myoadapt/tracking
+copying myoadapt/tracking/mlflow_adapter.py -> myoadapt-2.0.0/myoadapt/tracking
+copying myoadapt/ui/__init__.py -> myoadapt-2.0.0/myoadapt/ui
+copying myoadapt/ui/app.py -> myoadapt-2.0.0/myoadapt/ui
+copying myoadapt/ui/theme.py -> myoadapt-2.0.0/myoadapt/ui
+copying myoadapt/ui/pages/1_Train.py -> myoadapt-2.0.0/myoadapt/ui/pages
+copying myoadapt/ui/pages/2_Evaluate.py -> myoadapt-2.0.0/myoadapt/ui/pages
+copying myoadapt/ui/pages/3_Compare.py -> myoadapt-2.0.0/myoadapt/ui/pages
+copying myoadapt/ui/pages/4_Deploy.py -> myoadapt-2.0.0/myoadapt/ui/pages
+copying myoadapt/ui/pages/5_Explain.py -> myoadapt-2.0.0/myoadapt/ui/pages
+Writing myoadapt-2.0.0/setup.cfg
+Creating tar archive
+removing 'myoadapt-2.0.0' (and everything under it)
+* Building wheel from sdist
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools>=64
+  - wheel
+* Getting build dependencies for wheel...
+/tmp/build-env-10uhqlf3/lib/python3.12/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+!!
+
+        ********************************************************************************
+        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+        By 2027-Feb-18, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  corresp(dist, value, root_dir)
+/tmp/build-env-10uhqlf3/lib/python3.12/site-packages/setuptools/config/_apply_pyprojecttoml.py:61: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: Apache Software License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  dist._finalize_license_expression()
+/tmp/build-env-10uhqlf3/lib/python3.12/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: Apache Software License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+running egg_info
+writing myoadapt.egg-info/PKG-INFO
+writing dependency_links to myoadapt.egg-info/dependency_links.txt
+writing entry points to myoadapt.egg-info/entry_points.txt
+writing requirements to myoadapt.egg-info/requires.txt
+writing top-level names to myoadapt.egg-info/top_level.txt
+reading manifest file 'myoadapt.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+adding license file 'NOTICE'
+writing manifest file 'myoadapt.egg-info/SOURCES.txt'
+* Building wheel...
+/tmp/build-env-10uhqlf3/lib/python3.12/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+!!
+
+        ********************************************************************************
+        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+        By 2027-Feb-18, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  corresp(dist, value, root_dir)
+/tmp/build-env-10uhqlf3/lib/python3.12/site-packages/setuptools/config/_apply_pyprojecttoml.py:61: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: Apache Software License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  dist._finalize_license_expression()
+/tmp/build-env-10uhqlf3/lib/python3.12/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: Apache Software License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+running bdist_wheel
+running build
+running build_py
+creating build/lib/myoadapt
+copying myoadapt/__init__.py -> build/lib/myoadapt
+copying myoadapt/config.py -> build/lib/myoadapt
+copying myoadapt/reproducibility.py -> build/lib/myoadapt
+creating build/lib/myoadapt/adaptation
+copying myoadapt/adaptation/__init__.py -> build/lib/myoadapt/adaptation
+copying myoadapt/adaptation/adversarial.py -> build/lib/myoadapt/adaptation
+copying myoadapt/adaptation/coral.py -> build/lib/myoadapt/adaptation
+copying myoadapt/adaptation/ea.py -> build/lib/myoadapt/adaptation
+copying myoadapt/adaptation/sa.py -> build/lib/myoadapt/adaptation
+copying myoadapt/adaptation/tca.py -> build/lib/myoadapt/adaptation
+creating build/lib/myoadapt/api
+copying myoadapt/api/__init__.py -> build/lib/myoadapt/api
+copying myoadapt/api/rest.py -> build/lib/myoadapt/api
+copying myoadapt/api/websocket.py -> build/lib/myoadapt/api
+creating build/lib/myoadapt/cli
+copying myoadapt/cli/__init__.py -> build/lib/myoadapt/cli
+copying myoadapt/cli/main.py -> build/lib/myoadapt/cli
+creating build/lib/myoadapt/data
+copying myoadapt/data/__init__.py -> build/lib/myoadapt/data
+copying myoadapt/data/loaders.py -> build/lib/myoadapt/data
+copying myoadapt/data/meta_loaders.py -> build/lib/myoadapt/data
+copying myoadapt/data/preprocessing.py -> build/lib/myoadapt/data
+copying myoadapt/data/splits.py -> build/lib/myoadapt/data
+copying myoadapt/data/synthetic_augmentation.py -> build/lib/myoadapt/data
+creating build/lib/myoadapt/deployment
+copying myoadapt/deployment/__init__.py -> build/lib/myoadapt/deployment
+copying myoadapt/deployment/hardware_bench.py -> build/lib/myoadapt/deployment
+copying myoadapt/deployment/onnx_export.py -> build/lib/myoadapt/deployment
+copying myoadapt/deployment/realtime.py -> build/lib/myoadapt/deployment
+copying myoadapt/deployment/shap_reports.py -> build/lib/myoadapt/deployment
+copying myoadapt/deployment/trust_scores.py -> build/lib/myoadapt/deployment
+creating build/lib/myoadapt/evaluation
+copying myoadapt/evaluation/__init__.py -> build/lib/myoadapt/evaluation
+copying myoadapt/evaluation/calibration.py -> build/lib/myoadapt/evaluation
+copying myoadapt/evaluation/demographic_fairness.py -> build/lib/myoadapt/evaluation
+copying myoadapt/evaluation/diagrams.py -> build/lib/myoadapt/evaluation
+copying myoadapt/evaluation/drift_detection.py -> build/lib/myoadapt/evaluation
+copying myoadapt/evaluation/electrode_shift.py -> build/lib/myoadapt/evaluation
+copying myoadapt/evaluation/fairness.py -> build/lib/myoadapt/evaluation
+copying myoadapt/evaluation/fatigue.py -> build/lib/myoadapt/evaluation
+copying myoadapt/evaluation/hyperopt.py -> build/lib/myoadapt/evaluation
+copying myoadapt/evaluation/lodo.py -> build/lib/myoadapt/evaluation
+copying myoadapt/evaluation/loso.py -> build/lib/myoadapt/evaluation
+copying myoadapt/evaluation/metrics.py -> build/lib/myoadapt/evaluation
+copying myoadapt/evaluation/model_card.py -> build/lib/myoadapt/evaluation
+copying myoadapt/evaluation/paper_reports.py -> build/lib/myoadapt/evaluation
+copying myoadapt/evaluation/reports.py -> build/lib/myoadapt/evaluation
+copying myoadapt/evaluation/statistics.py -> build/lib/myoadapt/evaluation
+copying myoadapt/evaluation/zero_shot.py -> build/lib/myoadapt/evaluation
+creating build/lib/myoadapt/features
+copying myoadapt/features/__init__.py -> build/lib/myoadapt/features
+copying myoadapt/features/correlation.py -> build/lib/myoadapt/features
+copying myoadapt/features/frequency_domain.py -> build/lib/myoadapt/features
+copying myoadapt/features/histograms.py -> build/lib/myoadapt/features
+copying myoadapt/features/minirocket.py -> build/lib/myoadapt/features
+copying myoadapt/features/registry.py -> build/lib/myoadapt/features
+copying myoadapt/features/time_domain.py -> build/lib/myoadapt/features
+copying myoadapt/features/time_frequency.py -> build/lib/myoadapt/features
+creating build/lib/myoadapt/models
+copying myoadapt/models/__init__.py -> build/lib/myoadapt/models
+copying myoadapt/models/base.py -> build/lib/myoadapt/models
+copying myoadapt/models/classical.py -> build/lib/myoadapt/models
+copying myoadapt/models/cnn1d.py -> build/lib/myoadapt/models
+copying myoadapt/models/emg_foundation.py -> build/lib/myoadapt/models
+copying myoadapt/models/lite_dan.py -> build/lib/myoadapt/models
+copying myoadapt/models/waveformer.py -> build/lib/myoadapt/models
+creating build/lib/myoadapt/tasks
+copying myoadapt/tasks/__init__.py -> build/lib/myoadapt/tasks
+copying myoadapt/tasks/continuous.py -> build/lib/myoadapt/tasks
+copying myoadapt/tasks/intent_detection.py -> build/lib/myoadapt/tasks
+copying myoadapt/tasks/pose_regression.py -> build/lib/myoadapt/tasks
+copying myoadapt/tasks/semantic_retrieval.py -> build/lib/myoadapt/tasks
+creating build/lib/myoadapt/tracking
+copying myoadapt/tracking/__init__.py -> build/lib/myoadapt/tracking
+copying myoadapt/tracking/local_tracker.py -> build/lib/myoadapt/tracking
+copying myoadapt/tracking/mlflow_adapter.py -> build/lib/myoadapt/tracking
+creating build/lib/myoadapt/ui
+copying myoadapt/ui/__init__.py -> build/lib/myoadapt/ui
+copying myoadapt/ui/app.py -> build/lib/myoadapt/ui
+copying myoadapt/ui/theme.py -> build/lib/myoadapt/ui
+creating build/lib/myoadapt/ui/pages
+copying myoadapt/ui/pages/1_Train.py -> build/lib/myoadapt/ui/pages
+copying myoadapt/ui/pages/2_Evaluate.py -> build/lib/myoadapt/ui/pages
+copying myoadapt/ui/pages/3_Compare.py -> build/lib/myoadapt/ui/pages
+copying myoadapt/ui/pages/4_Deploy.py -> build/lib/myoadapt/ui/pages
+copying myoadapt/ui/pages/5_Explain.py -> build/lib/myoadapt/ui/pages
+running egg_info
+writing myoadapt.egg-info/PKG-INFO
+writing dependency_links to myoadapt.egg-info/dependency_links.txt
+writing entry points to myoadapt.egg-info/entry_points.txt
+writing requirements to myoadapt.egg-info/requires.txt
+writing top-level names to myoadapt.egg-info/top_level.txt
+reading manifest file 'myoadapt.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+adding license file 'NOTICE'
+writing manifest file 'myoadapt.egg-info/SOURCES.txt'
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/myoadapt
+copying build/lib/myoadapt/__init__.py -> build/bdist.linux-x86_64/wheel/./myoadapt
+copying build/lib/myoadapt/config.py -> build/bdist.linux-x86_64/wheel/./myoadapt
+copying build/lib/myoadapt/reproducibility.py -> build/bdist.linux-x86_64/wheel/./myoadapt
+creating build/bdist.linux-x86_64/wheel/myoadapt/adaptation
+copying build/lib/myoadapt/adaptation/__init__.py -> build/bdist.linux-x86_64/wheel/./myoadapt/adaptation
+copying build/lib/myoadapt/adaptation/adversarial.py -> build/bdist.linux-x86_64/wheel/./myoadapt/adaptation
+copying build/lib/myoadapt/adaptation/coral.py -> build/bdist.linux-x86_64/wheel/./myoadapt/adaptation
+copying build/lib/myoadapt/adaptation/ea.py -> build/bdist.linux-x86_64/wheel/./myoadapt/adaptation
+copying build/lib/myoadapt/adaptation/sa.py -> build/bdist.linux-x86_64/wheel/./myoadapt/adaptation
+copying build/lib/myoadapt/adaptation/tca.py -> build/bdist.linux-x86_64/wheel/./myoadapt/adaptation
+creating build/bdist.linux-x86_64/wheel/myoadapt/api
+copying build/lib/myoadapt/api/__init__.py -> build/bdist.linux-x86_64/wheel/./myoadapt/api
+copying build/lib/myoadapt/api/rest.py -> build/bdist.linux-x86_64/wheel/./myoadapt/api
+copying build/lib/myoadapt/api/websocket.py -> build/bdist.linux-x86_64/wheel/./myoadapt/api
+creating build/bdist.linux-x86_64/wheel/myoadapt/cli
+copying build/lib/myoadapt/cli/__init__.py -> build/bdist.linux-x86_64/wheel/./myoadapt/cli
+copying build/lib/myoadapt/cli/main.py -> build/bdist.linux-x86_64/wheel/./myoadapt/cli
+creating build/bdist.linux-x86_64/wheel/myoadapt/data
+copying build/lib/myoadapt/data/__init__.py -> build/bdist.linux-x86_64/wheel/./myoadapt/data
+copying build/lib/myoadapt/data/loaders.py -> build/bdist.linux-x86_64/wheel/./myoadapt/data
+copying build/lib/myoadapt/data/meta_loaders.py -> build/bdist.linux-x86_64/wheel/./myoadapt/data
+copying build/lib/myoadapt/data/preprocessing.py -> build/bdist.linux-x86_64/wheel/./myoadapt/data
+copying build/lib/myoadapt/data/splits.py -> build/bdist.linux-x86_64/wheel/./myoadapt/data
+copying build/lib/myoadapt/data/synthetic_augmentation.py -> build/bdist.linux-x86_64/wheel/./myoadapt/data
+creating build/bdist.linux-x86_64/wheel/myoadapt/deployment
+copying build/lib/myoadapt/deployment/__init__.py -> build/bdist.linux-x86_64/wheel/./myoadapt/deployment
+copying build/lib/myoadapt/deployment/hardware_bench.py -> build/bdist.linux-x86_64/wheel/./myoadapt/deployment
+copying build/lib/myoadapt/deployment/onnx_export.py -> build/bdist.linux-x86_64/wheel/./myoadapt/deployment
+copying build/lib/myoadapt/deployment/realtime.py -> build/bdist.linux-x86_64/wheel/./myoadapt/deployment
+copying build/lib/myoadapt/deployment/shap_reports.py -> build/bdist.linux-x86_64/wheel/./myoadapt/deployment
+copying build/lib/myoadapt/deployment/trust_scores.py -> build/bdist.linux-x86_64/wheel/./myoadapt/deployment
+creating build/bdist.linux-x86_64/wheel/myoadapt/evaluation
+copying build/lib/myoadapt/evaluation/__init__.py -> build/bdist.linux-x86_64/wheel/./myoadapt/evaluation
+copying build/lib/myoadapt/evaluation/calibration.py -> build/bdist.linux-x86_64/wheel/./myoadapt/evaluation
+copying build/lib/myoadapt/evaluation/demographic_fairness.py -> build/bdist.linux-x86_64/wheel/./myoadapt/evaluation
+copying build/lib/myoadapt/evaluation/diagrams.py -> build/bdist.linux-x86_64/wheel/./myoadapt/evaluation
+copying build/lib/myoadapt/evaluation/drift_detection.py -> build/bdist.linux-x86_64/wheel/./myoadapt/evaluation
+copying build/lib/myoadapt/evaluation/electrode_shift.py -> build/bdist.linux-x86_64/wheel/./myoadapt/evaluation
+copying build/lib/myoadapt/evaluation/fairness.py -> build/bdist.linux-x86_64/wheel/./myoadapt/evaluation
+copying build/lib/myoadapt/evaluation/fatigue.py -> build/bdist.linux-x86_64/wheel/./myoadapt/evaluation
+copying build/lib/myoadapt/evaluation/hyperopt.py -> build/bdist.linux-x86_64/wheel/./myoadapt/evaluation
+copying build/lib/myoadapt/evaluation/lodo.py -> build/bdist.linux-x86_64/wheel/./myoadapt/evaluation
+copying build/lib/myoadapt/evaluation/loso.py -> build/bdist.linux-x86_64/wheel/./myoadapt/evaluation
+copying build/lib/myoadapt/evaluation/metrics.py -> build/bdist.linux-x86_64/wheel/./myoadapt/evaluation
+copying build/lib/myoadapt/evaluation/model_card.py -> build/bdist.linux-x86_64/wheel/./myoadapt/evaluation
+copying build/lib/myoadapt/evaluation/paper_reports.py -> build/bdist.linux-x86_64/wheel/./myoadapt/evaluation
+copying build/lib/myoadapt/evaluation/reports.py -> build/bdist.linux-x86_64/wheel/./myoadapt/evaluation
+copying build/lib/myoadapt/evaluation/statistics.py -> build/bdist.linux-x86_64/wheel/./myoadapt/evaluation
+copying build/lib/myoadapt/evaluation/zero_shot.py -> build/bdist.linux-x86_64/wheel/./myoadapt/evaluation
+creating build/bdist.linux-x86_64/wheel/myoadapt/features
+copying build/lib/myoadapt/features/__init__.py -> build/bdist.linux-x86_64/wheel/./myoadapt/features
+copying build/lib/myoadapt/features/correlation.py -> build/bdist.linux-x86_64/wheel/./myoadapt/features
+copying build/lib/myoadapt/features/frequency_domain.py -> build/bdist.linux-x86_64/wheel/./myoadapt/features
+copying build/lib/myoadapt/features/histograms.py -> build/bdist.linux-x86_64/wheel/./myoadapt/features
+copying build/lib/myoadapt/features/minirocket.py -> build/bdist.linux-x86_64/wheel/./myoadapt/features
+copying build/lib/myoadapt/features/registry.py -> build/bdist.linux-x86_64/wheel/./myoadapt/features
+copying build/lib/myoadapt/features/time_domain.py -> build/bdist.linux-x86_64/wheel/./myoadapt/features
+copying build/lib/myoadapt/features/time_frequency.py -> build/bdist.linux-x86_64/wheel/./myoadapt/features
+creating build/bdist.linux-x86_64/wheel/myoadapt/models
+copying build/lib/myoadapt/models/__init__.py -> build/bdist.linux-x86_64/wheel/./myoadapt/models
+copying build/lib/myoadapt/models/base.py -> build/bdist.linux-x86_64/wheel/./myoadapt/models
+copying build/lib/myoadapt/models/classical.py -> build/bdist.linux-x86_64/wheel/./myoadapt/models
+copying build/lib/myoadapt/models/cnn1d.py -> build/bdist.linux-x86_64/wheel/./myoadapt/models
+copying build/lib/myoadapt/models/emg_foundation.py -> build/bdist.linux-x86_64/wheel/./myoadapt/models
+copying build/lib/myoadapt/models/lite_dan.py -> build/bdist.linux-x86_64/wheel/./myoadapt/models
+copying build/lib/myoadapt/models/waveformer.py -> build/bdist.linux-x86_64/wheel/./myoadapt/models
+creating build/bdist.linux-x86_64/wheel/myoadapt/tasks
+copying build/lib/myoadapt/tasks/__init__.py -> build/bdist.linux-x86_64/wheel/./myoadapt/tasks
+copying build/lib/myoadapt/tasks/continuous.py -> build/bdist.linux-x86_64/wheel/./myoadapt/tasks
+copying build/lib/myoadapt/tasks/intent_detection.py -> build/bdist.linux-x86_64/wheel/./myoadapt/tasks
+copying build/lib/myoadapt/tasks/pose_regression.py -> build/bdist.linux-x86_64/wheel/./myoadapt/tasks
+copying build/lib/myoadapt/tasks/semantic_retrieval.py -> build/bdist.linux-x86_64/wheel/./myoadapt/tasks
+creating build/bdist.linux-x86_64/wheel/myoadapt/tracking
+copying build/lib/myoadapt/tracking/__init__.py -> build/bdist.linux-x86_64/wheel/./myoadapt/tracking
+copying build/lib/myoadapt/tracking/local_tracker.py -> build/bdist.linux-x86_64/wheel/./myoadapt/tracking
+copying build/lib/myoadapt/tracking/mlflow_adapter.py -> build/bdist.linux-x86_64/wheel/./myoadapt/tracking
+creating build/bdist.linux-x86_64/wheel/myoadapt/ui
+copying build/lib/myoadapt/ui/__init__.py -> build/bdist.linux-x86_64/wheel/./myoadapt/ui
+copying build/lib/myoadapt/ui/app.py -> build/bdist.linux-x86_64/wheel/./myoadapt/ui
+copying build/lib/myoadapt/ui/theme.py -> build/bdist.linux-x86_64/wheel/./myoadapt/ui
+creating build/bdist.linux-x86_64/wheel/myoadapt/ui/pages
+copying build/lib/myoadapt/ui/pages/1_Train.py -> build/bdist.linux-x86_64/wheel/./myoadapt/ui/pages
+copying build/lib/myoadapt/ui/pages/2_Evaluate.py -> build/bdist.linux-x86_64/wheel/./myoadapt/ui/pages
+copying build/lib/myoadapt/ui/pages/3_Compare.py -> build/bdist.linux-x86_64/wheel/./myoadapt/ui/pages
+copying build/lib/myoadapt/ui/pages/4_Deploy.py -> build/bdist.linux-x86_64/wheel/./myoadapt/ui/pages
+copying build/lib/myoadapt/ui/pages/5_Explain.py -> build/bdist.linux-x86_64/wheel/./myoadapt/ui/pages
+running install_egg_info
+Copying myoadapt.egg-info to build/bdist.linux-x86_64/wheel/./myoadapt-2.0.0-py3.12.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/myoadapt-2.0.0.dist-info/WHEEL
+creating '/home/ubuntu/release_audit/myoadapt/dist/.tmp-r6g5zs3a/myoadapt-2.0.0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'myoadapt/__init__.py'
+adding 'myoadapt/config.py'
+adding 'myoadapt/reproducibility.py'
+adding 'myoadapt/adaptation/__init__.py'
+adding 'myoadapt/adaptation/adversarial.py'
+adding 'myoadapt/adaptation/coral.py'
+adding 'myoadapt/adaptation/ea.py'
+adding 'myoadapt/adaptation/sa.py'
+adding 'myoadapt/adaptation/tca.py'
+adding 'myoadapt/api/__init__.py'
+adding 'myoadapt/api/rest.py'
+adding 'myoadapt/api/websocket.py'
+adding 'myoadapt/cli/__init__.py'
+adding 'myoadapt/cli/main.py'
+adding 'myoadapt/data/__init__.py'
+adding 'myoadapt/data/loaders.py'
+adding 'myoadapt/data/meta_loaders.py'
+adding 'myoadapt/data/preprocessing.py'
+adding 'myoadapt/data/splits.py'
+adding 'myoadapt/data/synthetic_augmentation.py'
+adding 'myoadapt/deployment/__init__.py'
+adding 'myoadapt/deployment/hardware_bench.py'
+adding 'myoadapt/deployment/onnx_export.py'
+adding 'myoadapt/deployment/realtime.py'
+adding 'myoadapt/deployment/shap_reports.py'
+adding 'myoadapt/deployment/trust_scores.py'
+adding 'myoadapt/evaluation/__init__.py'
+adding 'myoadapt/evaluation/calibration.py'
+adding 'myoadapt/evaluation/demographic_fairness.py'
+adding 'myoadapt/evaluation/diagrams.py'
+adding 'myoadapt/evaluation/drift_detection.py'
+adding 'myoadapt/evaluation/electrode_shift.py'
+adding 'myoadapt/evaluation/fairness.py'
+adding 'myoadapt/evaluation/fatigue.py'
+adding 'myoadapt/evaluation/hyperopt.py'
+adding 'myoadapt/evaluation/lodo.py'
+adding 'myoadapt/evaluation/loso.py'
+adding 'myoadapt/evaluation/metrics.py'
+adding 'myoadapt/evaluation/model_card.py'
+adding 'myoadapt/evaluation/paper_reports.py'
+adding 'myoadapt/evaluation/reports.py'
+adding 'myoadapt/evaluation/statistics.py'
+adding 'myoadapt/evaluation/zero_shot.py'
+adding 'myoadapt/features/__init__.py'
+adding 'myoadapt/features/correlation.py'
+adding 'myoadapt/features/frequency_domain.py'
+adding 'myoadapt/features/histograms.py'
+adding 'myoadapt/features/minirocket.py'
+adding 'myoadapt/features/registry.py'
+adding 'myoadapt/features/time_domain.py'
+adding 'myoadapt/features/time_frequency.py'
+adding 'myoadapt/models/__init__.py'
+adding 'myoadapt/models/base.py'
+adding 'myoadapt/models/classical.py'
+adding 'myoadapt/models/cnn1d.py'
+adding 'myoadapt/models/emg_foundation.py'
+adding 'myoadapt/models/lite_dan.py'
+adding 'myoadapt/models/waveformer.py'
+adding 'myoadapt/tasks/__init__.py'
+adding 'myoadapt/tasks/continuous.py'
+adding 'myoadapt/tasks/intent_detection.py'
+adding 'myoadapt/tasks/pose_regression.py'
+adding 'myoadapt/tasks/semantic_retrieval.py'
+adding 'myoadapt/tracking/__init__.py'
+adding 'myoadapt/tracking/local_tracker.py'
+adding 'myoadapt/tracking/mlflow_adapter.py'
+adding 'myoadapt/ui/__init__.py'
+adding 'myoadapt/ui/app.py'
+adding 'myoadapt/ui/theme.py'
+adding 'myoadapt/ui/pages/1_Train.py'
+adding 'myoadapt/ui/pages/2_Evaluate.py'
+adding 'myoadapt/ui/pages/3_Compare.py'
+adding 'myoadapt/ui/pages/4_Deploy.py'
+adding 'myoadapt/ui/pages/5_Explain.py'
+adding 'myoadapt-2.0.0.dist-info/licenses/LICENSE'
+adding 'myoadapt-2.0.0.dist-info/licenses/NOTICE'
+adding 'myoadapt-2.0.0.dist-info/METADATA'
+adding 'myoadapt-2.0.0.dist-info/WHEEL'
+adding 'myoadapt-2.0.0.dist-info/entry_points.txt'
+adding 'myoadapt-2.0.0.dist-info/top_level.txt'
+adding 'myoadapt-2.0.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built myoadapt-2.0.0.tar.gz and myoadapt-2.0.0-py3-none-any.whl

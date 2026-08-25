@@ -1,0 +1,13 @@
+.............................                                            [100%]
+=============================== warnings summary ===============================
+tests/unit/test_pose_regression.py::test_pose_mlp_save_load_roundtrip
+tests/unit/test_pose_regression.py::test_pose_mlp_adjusts_dims_from_data
+  /usr/local/lib/python3.12/dist-packages/sklearn/neural_network/_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+    warnings.warn(
+
+tests/unit/test_pose_regression.py::test_pose_mlp_save_load_roundtrip
+  /usr/local/lib/python3.12/dist-packages/sklearn/neural_network/_multilayer_perceptron.py:785: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (50) reached and the optimization hasn't converged yet.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+29 passed, 3 warnings in 15.67s

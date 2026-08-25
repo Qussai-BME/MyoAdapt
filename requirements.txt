@@ -1,0 +1,19 @@
+# Dependency file for Streamlit Community Cloud (and any plain `pip install -r
+# requirements.txt`). Streamlit Cloud's free tier caps memory around ~1 GB, so
+# this intentionally installs the LIGHT profile: the local package in editable
+# mode (pulling in every core dependency from pyproject.toml — streamlit,
+# fastapi, numpy, pandas, scipy, scikit-learn, etc.) plus xgboost, which is the
+# model used in the README quick-start (`myoadapt train --model xgboost`).
+#
+# NOT included here: torch, lightgbm, numba (the `ml` extra), onnx/onnxruntime,
+# shap. The UI degrades gracefully without them — CNN1D / Lite-DAN / EMG
+# Foundation / WaveFormer pages will show a clear "install X" message instead
+# of crashing the app, and ONNX export / SHAP explanations will do the same.
+#
+# To enable the full model roster on your own infrastructure (Docker, a paid
+# Streamlit Cloud tier, or any host with >2 GB RAM), replace the two lines
+# below with:
+#   -e .[all]
+#
+-e .
+xgboost>=1.6

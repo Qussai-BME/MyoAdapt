@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual envs
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+
+# Type checking
+.mypy_cache/
+.ruff_cache/
+
+# Data / models / results (don't commit large files)
+data/*
+!data/sample/
+!data/sample/README.md
+!data/sample/smoke_test.npz
+models/
+results/
+experiments/
+reports/
+outputs/
+notebooks/.ipynb_checkpoints/
+
+# Docker
+*.pid
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+logs/

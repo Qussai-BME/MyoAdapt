@@ -1,0 +1,111 @@
+name: Release Quality Gates
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+# Read-only by default. Do not grant write or token permissions to untrusted PR code.
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Tests (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Install package and test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[all]"
+      - name: Run non-slow regression suite with coverage
+        run: pytest tests -m "not slow" --tb=short -q --cov=myoadapt --cov-report=term-missing
+
+  slow-tests:
+    name: Slow tests (bounded)
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Install package and test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[all]"
+      - name: Run slow regression suite without coverage overhead
+        run: pytest tests -m slow --tb=short -q --no-cov
+
+  quality-and-security:
+    name: Operational quality and dependency security
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Install audit tooling
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[all]" pip-audit bandit build twine
+      - name: Compile all source and tests
+        run: python -m compileall -q myoadapt tests scripts notebooks
+      - name: Enforce operational Ruff errors
+        run: ruff check myoadapt --select F821,F811,E9
+      - name: Scan Python dependencies
+        run: pip-audit
+      - name: Scan source for security issues
+        run: bandit -r myoadapt -ll -ii
+      - name: Build and validate distributions
+        run: |
+          python -m build
+          twine check dist/*
+
+  documentation:
+    name: Documentation build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Build documentation strictly
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[docs]"
+          mkdocs build --strict
+
+  container:
+    name: Container build
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build hardened runtime image
+        run: docker build --pull --tag myoadapt:${{ github.sha }} .
+      - name: Verify non-root image metadata and compose configuration
+        run: |
+          test "$(docker image inspect --format='{{.Config.User}}' myoadapt:${{ github.sha }})" = "myoadapt"
+          docker compose config --quiet

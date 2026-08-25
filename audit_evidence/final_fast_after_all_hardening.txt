@@ -1,0 +1,128 @@
+........................................................................ [ 20%]
+........................................................................ [ 41%]
+......................................................s................. [ 62%]
+........................................................................ [ 83%]
+..........................................s...............               [100%]
+=============================== warnings summary ===============================
+../../../../usr/local/lib/python3.12/dist-packages/fastapi/testclient.py:1
+  /usr/local/lib/python3.12/dist-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+../../../../usr/local/lib/python3.12/dist-packages/shap/plots/colors/_colors.py:47
+  /usr/local/lib/python3.12/dist-packages/shap/plots/colors/_colors.py:47: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.
+    red_blue.set_bad(gray_rgb.tolist(), 1.0)
+
+../../../../usr/local/lib/python3.12/dist-packages/shap/plots/colors/_colors.py:48
+  /usr/local/lib/python3.12/dist-packages/shap/plots/colors/_colors.py:48: PendingDeprecationWarning: The set_over function will be deprecated in a future version. Use cmap.with_extremes(over=...) or Colormap(over=...) instead.
+    red_blue.set_over(gray_rgb.tolist(), 1.0)
+
+../../../../usr/local/lib/python3.12/dist-packages/shap/plots/colors/_colors.py:49
+  /usr/local/lib/python3.12/dist-packages/shap/plots/colors/_colors.py:49: PendingDeprecationWarning: The set_under function will be deprecated in a future version. Use cmap.with_extremes(under=...) or Colormap(under=...) instead.
+    red_blue.set_under(gray_rgb.tolist(), 1.0)  # "under" is incorrectly used instead of "bad" in the scatter plot
+
+tests/unit/test_evaluation.py::test_inflation_positive_with_rest_dominance
+tests/unit/test_rigor_suite.py::test_disparities_report_worst_group
+  /usr/local/lib/python3.12/dist-packages/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+    warnings.warn(
+
+tests/unit/test_pose_regression.py::test_pose_mlp_save_load_roundtrip
+tests/unit/test_pose_regression.py::test_pose_mlp_adjusts_dims_from_data
+  /usr/local/lib/python3.12/dist-packages/sklearn/neural_network/_multilayer_perceptron.py:695: UserWarning: Got `batch_size` less than 1 or larger than sample size. It is going to be clipped
+    warnings.warn(
+
+tests/unit/test_pose_regression.py::test_pose_mlp_save_load_roundtrip
+  /usr/local/lib/python3.12/dist-packages/sklearn/neural_network/_multilayer_perceptron.py:785: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (50) reached and the optimization hasn't converged yet.
+    warnings.warn(
+
+tests/unit/test_rigor_suite.py::test_disparities_report_worst_group
+  /usr/local/lib/python3.12/dist-packages/sklearn/utils/_param_validation.py:218: UndefinedMetricWarning: `y1`, `y2` and `labels` have only one label in common. `cohen_kappa_score` is undefined and set to the value defined by the the `replace_undefined_by` param, which is set to nan.
+    return func(*args, **kwargs)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.3-final-0 ________________
+
+Name                                          Stmts   Miss  Cover   Missing
+---------------------------------------------------------------------------
+myoadapt/__init__.py                             14      5    64%   68-69, 73-75
+myoadapt/adaptation/__init__.py                   7      0   100%
+myoadapt/adaptation/adversarial.py               27      0   100%
+myoadapt/adaptation/coral.py                     38      4    89%   67, 70, 81, 86
+myoadapt/adaptation/ea.py                        66     15    77%   64, 74-76, 81, 87, 92-93, 129-131, 151-154
+myoadapt/adaptation/sa.py                        28      2    93%   49, 54
+myoadapt/adaptation/tca.py                       75     20    73%   54-56, 63-65, 93-96, 108, 119-125, 129-133
+myoadapt/api/__init__.py                          3      0   100%
+myoadapt/api/rest.py                            195     91    53%   42-44, 52, 62, 64, 90, 101-103, 114-122, 125-127, 168-169, 173-176, 186-209, 262-270, 282-293, 301-317, 321-328, 334-335
+myoadapt/api/websocket.py                       122    104    15%   35-36, 40-47, 52-70, 90-210
+myoadapt/cli/__init__.py                          2      0   100%
+myoadapt/cli/main.py                            744    658    12%   87-88, 126-271, 284-316, 326-340, 349-355, 365-371, 381-391, 401-425, 433-437, 447-463, 487-559, 573-592, 617-721, 744-761, 781-814, 836-876, 909-990, 1011-1054, 1073-1106, 1131-1208, 1232-1280, 1311-1352, 1374-1411, 1415
+myoadapt/config.py                              150     22    85%   34, 36, 43, 56, 58, 81-93, 163-166
+myoadapt/data/__init__.py                         6      0   100%
+myoadapt/data/loaders.py                        149     55    63%   64, 79, 95-98, 102-159, 263, 265
+myoadapt/data/meta_loaders.py                   189     94    50%   162-287, 369-375, 390-407
+myoadapt/data/preprocessing.py                  115     25    78%   41-48, 58, 72, 79, 117, 125, 142-145, 167, 169, 179-183, 213, 231-232, 236
+myoadapt/data/splits.py                          40      6    85%   50-53, 80, 85
+myoadapt/data/synthetic_augmentation.py         442     83    81%   41-43, 51, 81, 102-104, 124, 144-146, 157-165, 173-187, 192-200, 209-246, 342, 344, 349, 454, 466, 472, 492, 533-537, 597, 609, 733, 735, 740, 805, 838, 844, 850, 874, 908-912
+myoadapt/deployment/__init__.py                   6      0   100%
+myoadapt/deployment/hardware_bench.py            80     26    68%   63, 70-82, 121, 134-135, 143-145, 194-199
+myoadapt/deployment/onnx_export.py              145    115    21%   32-39, 45-47, 53-54, 80-103, 109-153, 165-202, 214-237, 255-264, 274-298
+myoadapt/deployment/realtime.py                  69     15    78%   89, 108-112, 124-126, 142, 147-150, 153
+myoadapt/deployment/shap_reports.py             124     36    71%   34-36, 92-95, 104, 115-116, 122, 130-132, 144, 148-153, 173, 176-177, 183, 187-188, 201, 203, 242-250
+myoadapt/deployment/trust_scores.py              36      4    89%   86, 90-91, 108
+myoadapt/evaluation/__init__.py                  15      0   100%
+myoadapt/evaluation/calibration.py              180     13    93%   72-73, 80, 102-103, 200, 205, 241, 289, 359, 387-389
+myoadapt/evaluation/demographic_fairness.py     194     59    70%   147-149, 156-158, 175-176, 206-214, 230-237, 270-274, 314, 333, 351-357, 364, 369, 412-421, 426-441, 451, 459
+myoadapt/evaluation/diagrams.py                 174      9    95%   43-44, 142, 160-162, 245, 302, 363-364
+myoadapt/evaluation/drift_detection.py          255     58    77%   47, 52-62, 75, 77, 81, 87, 93-94, 167, 207, 271, 313, 317, 384, 408-428, 478, 508-510, 561, 568-574, 579-582, 608-609, 625, 644-650, 662
+myoadapt/evaluation/electrode_shift.py          168     43    74%   121, 125, 150, 154, 169, 189, 229, 282, 414-489, 505, 511
+myoadapt/evaluation/fairness.py                  74      6    92%   98, 114, 117-118, 130, 135
+myoadapt/evaluation/fatigue.py                  276     80    71%   68-73, 76, 85, 93, 102, 168, 209-217, 238-243, 268-276, 289, 295, 323-324, 338-341, 344, 381, 458-467, 509-546, 569, 580, 591-597
+myoadapt/evaluation/hyperopt.py                 192     73    62%   140, 153-154, 157-158, 270, 274, 276, 279, 288, 320-330, 365-366, 388, 396, 443-476, 487-514
+myoadapt/evaluation/lodo.py                      50      6    88%   52, 59, 98-100, 105
+myoadapt/evaluation/loso.py                      76     18    76%   94, 104, 156-159, 163, 168-169, 178, 206-217
+myoadapt/evaluation/metrics.py                   62     17    73%   44-45, 51, 113-114, 145-159
+myoadapt/evaluation/model_card.py               111     29    74%   102, 104, 112-113, 115-117, 120-124, 131-137, 160-161, 233-234, 243-248
+myoadapt/evaluation/paper_reports.py            128      8    94%   82, 121, 162, 179, 349-350, 354-355
+myoadapt/evaluation/reports.py                   79     16    80%   138, 161-177
+myoadapt/evaluation/statistics.py               198     11    94%   98-105, 109-110, 280, 359, 398, 428, 450, 454
+myoadapt/evaluation/zero_shot.py                123     15    88%   152, 161, 180-181, 185, 195, 216, 358-360, 363-365, 379, 386
+myoadapt/features/__init__.py                     8      0   100%
+myoadapt/features/correlation.py                 37     16    57%   29, 48, 51-53, 56-62, 70-72, 75
+myoadapt/features/frequency_domain.py            81     46    43%   32, 41, 49, 57-60, 65-71, 78-82, 90-99, 105-113, 122-123, 126, 129-137, 141, 144
+myoadapt/features/histograms.py                  32      3    91%   19, 24, 54
+myoadapt/features/minirocket.py                 140     48    66%   121, 167, 171-173, 192, 271, 278-280, 285-292, 368-423
+myoadapt/features/registry.py                    68     16    76%   38-41, 46, 57-58, 65, 91, 98-99, 103, 108-109, 118, 125
+myoadapt/features/time_domain.py                125     14    89%   62, 76, 84, 104, 108, 110-112, 118, 180, 189, 215-216, 251
+myoadapt/features/time_frequency.py              63      7    89%   24-26, 33, 42, 57, 103
+myoadapt/models/__init__.py                      11      0   100%
+myoadapt/models/base.py                          54     15    72%   51, 93, 107, 110-114, 117-119, 123, 126-128
+myoadapt/models/classical.py                    132     23    83%   29-30, 35-36, 90-91, 106-107, 136, 170-176, 215, 232-237
+myoadapt/models/cnn1d.py                        132     18    86%   29-31, 139, 150, 195-213
+myoadapt/models/emg_foundation.py               233     29    88%   43-45, 240, 274, 291-292, 326, 337, 349, 417-444
+myoadapt/models/lite_dan.py                     222     42    81%   52-54, 153, 190, 235-236, 273, 299, 311, 321, 331-333, 342, 361-371, 412-437
+myoadapt/models/waveformer.py                   233    195    16%   44-46, 68-80, 83-87, 103-142, 147-164, 168, 214-236, 240-250, 262-312, 316-320, 323-330, 333-340, 344-346, 355-365, 369, 379-393, 413-445, 459-513
+myoadapt/reproducibility.py                     158     30    81%   79-86, 98-99, 162-170, 239-241, 294, 296-297, 314-315, 330, 332, 345-346
+myoadapt/tasks/__init__.py                        6      0   100%
+myoadapt/tasks/continuous.py                    140     14    90%   34-36, 189, 204, 256-272
+myoadapt/tasks/intent_detection.py              269     67    75%   76, 82-85, 96-109, 207, 209, 216, 240, 310, 312, 378, 380, 474, 492, 521, 535, 569-577, 615, 617-619, 634-644, 648-668
+myoadapt/tasks/pose_regression.py               308    104    66%   46-48, 56-99, 176, 230, 233, 238, 243-244, 267, 269-271, 282-289, 522, 524, 531, 533, 535, 565, 571, 575, 584, 588-589, 594-607, 611-616, 624-632, 639-691
+myoadapt/tasks/semantic_retrieval.py            312     39    88%   51-53, 141-149, 250, 257, 427, 439, 506, 520, 546-547, 564-570, 626, 630, 633, 638, 686-706
+myoadapt/tracking/__init__.py                     3      0   100%
+myoadapt/tracking/local_tracker.py               73      4    95%   69-70, 105, 114
+myoadapt/tracking/mlflow_adapter.py              53     35    34%   19-21, 31-37, 40-42, 45-47, 50-52, 55-57, 60-62, 65-67, 70-72, 78-82
+myoadapt/ui/__init__.py                           0      0   100%
+myoadapt/ui/app.py                               56      0   100%
+myoadapt/ui/pages/1_Train.py                    105     64    39%   46-63, 69-73, 125-205
+myoadapt/ui/pages/2_Evaluate.py                 109     75    31%   41-58, 64-65, 105-202
+myoadapt/ui/pages/3_Compare.py                   95     75    21%   39-56, 61-62, 83-177
+myoadapt/ui/pages/4_Deploy.py                   106     51    52%   93-128, 144-178
+myoadapt/ui/pages/5_Explain.py                   92     62    33%   41-60, 90-155
+myoadapt/ui/theme.py                             53      1    98%   279
+---------------------------------------------------------------------------
+TOTAL                                          8736   2934    66%
+=========================== short test summary info ============================
+SKIPPED [1] tests/unit/test_models.py:15: xgboost is installed — fallback not tested
+SKIPPED [1] tests/unit/test_tracking.py:107: MLflow adapter requires a running MLflow server; covered in a separate integration environment.
+
+ELAPSED_SECONDS=126
+PYTEST_EXIT=0

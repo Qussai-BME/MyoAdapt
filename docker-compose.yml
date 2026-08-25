@@ -1,0 +1,71 @@
+# Production-oriented local Compose profile for research-only MyoAdapt services.
+# Put this behind an authenticated TLS reverse proxy for public use.
+# Copy .env.example to .env and set a long, unique MYOADAPT_API_KEY.
+
+services:
+  api:
+    build:
+      context: .
+    ports:
+      # Bind locally; terminate TLS and apply request-size/rate limits upstream.
+      - "127.0.0.1:8000:8000"
+    environment:
+      MYOADAPT_REQUIRE_API_KEY: "true"
+      MYOADAPT_API_KEY: ${MYOADAPT_API_KEY:?Set MYOADAPT_API_KEY in .env}
+      MYOADAPT_DATA_ROOT: /app/data
+      MYOADAPT_OUTPUT_DIR: /app/results
+      # Set explicit trusted browser origins only if a browser client is used.
+      MYOADAPT_CORS_ORIGINS: ${MYOADAPT_CORS_ORIGINS:-}
+    volumes:
+      - ./data:/app/data:ro
+      - ./models:/app/models:ro
+      - myoadapt-results:/app/results
+      - myoadapt-experiments:/app/experiments
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    pids_limit: 256
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys,urllib.request; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=5).status == 200 else 1)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+  ui:
+    build:
+      context: .
+    profiles: ["ui"]
+    ports:
+      - "127.0.0.1:8501:8501"
+    environment:
+      MYOADAPT_DATA_ROOT: /app/data
+      MYOADAPT_OUTPUT_DIR: /app/results
+    volumes:
+      - ./data:/app/data:ro
+      - ./models:/app/models:ro
+      - myoadapt-results:/app/results
+      - myoadapt-reports:/app/reports
+    command: >
+      streamlit run myoadapt/ui/app.py
+      --server.port 8501
+      --server.address 0.0.0.0
+      --server.headless true
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    pids_limit: 256
+    restart: unless-stopped
+
+volumes:
+  myoadapt-results:
+  myoadapt-reports:

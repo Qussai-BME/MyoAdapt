@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "MyoAdapt: Open-Source CPU-Native sEMG Pattern Recognition Platform"
+abstract: >
+  MyoAdapt is an open-source Python platform for surface
+  electromyography (sEMG) pattern recognition with emphasis on
+  zero-calibration cross-subject generalization, adversarial domain
+  adaptation (Lite-DAN), edge deployment via ONNX, audit-ready
+  explainability via SHAP, and reproducible research across the
+  NinaPro DB1/DB2/DB3/DB7, CapgMyo, and UCI datasets. Designed to
+  run on CPU-native hardware for low-resource environments and edge
+  deployment scenarios.
+authors:
+  - family-names: Adlbi
+    given-names: Qussai
+    affiliation: "Al-Andalus University / Al-Andalus University for Medical Sciences"
+keywords:
+  - electromyography
+  - pattern recognition
+  - domain adaptation
+  - edge deployment
+  - eu ai act
+  - shap explainability
+  - onnx
+  - cross-subject
+  - loso
+  - lodo
+license: Apache-2.0
+repository-code: "https://github.com/Qussai-BME/MyoAdapt"
+version: "2.0.0"
+date-released: "2025-08-12"

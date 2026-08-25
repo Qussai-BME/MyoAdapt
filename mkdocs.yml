@@ -1,0 +1,93 @@
+site_name: MyoAdapt Documentation
+site_description: Research-only CPU-native sEMG pattern-recognition software with evaluation and controlled deployment utilities.
+site_url: https://github.com/Qussai-BME/MyoAdapt#readme
+
+repo_name: Qussai-BME/MyoAdapt
+repo_url: https://github.com/Qussai-BME/MyoAdapt
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  plugins:
+    - search
+    - mkdocstrings:
+        handlers:
+          python:
+            options:
+              show_source: true
+              show_root_heading: true
+
+nav:
+  - Home: index.md
+  - Quick start: quickstart.md
+  - Architecture: architecture.md
+  - Research capabilities: research_chain.md
+  - Modules:
+      - data: modules/data.md
+      - features: modules/features.md
+      - models: modules/models.md
+      - adaptation: modules/adaptation.md
+      - evaluation: modules/evaluation.md
+      - deployment: modules/deployment.md
+      - tracking: modules/tracking.md
+      - api: modules/api.md
+      - ui: modules/ui.md
+      - cli: modules/cli.md
+      - tasks: modules/tasks.md
+      - reproducibility: modules/reproducibility.md
+  - Deployment: deployment.md
+  - Release and governance:
+      - Release readiness: RELEASE_READINESS.md
+      - Pre-release audit: RELEASE_AUDIT_2026-08-22.md
+      - Research use notice: RESEARCH_USE_NOTICE.md
+      - Risk register: RISK_REGISTER.md
+      - Security deployment: SECURITY_DEPLOYMENT.md
+      - Privacy operator checklist: PRIVACY_OPERATOR_CHECKLIST.md
+      - Model evidence requirements: MODEL_EVIDENCE_REQUIREMENTS.md
+  - Compliance context:
+      - EU AI Act: compliance/eu_ai_act.md
+      - FDA SaMD: compliance/fda_samd.md
+      - GDPR: compliance/gdpr.md
+  - API reference: api_reference.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Qussai-BME/MyoAdapt
