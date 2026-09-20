@@ -1,6 +1,7 @@
 # MyoAdapt
 
 **An open-source, CPU-native, research-only Python platform for surface electromyography (sEMG) pattern recognition, evaluation, and controlled deployment experiments.**
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22096284.svg)](https://doi.org/10.5281/zenodo.22096284)
 
 🚀 **[Live Interactive Demo](https://myoadapt-qussai-bme.streamlit.app/)
@@ -263,7 +264,7 @@ RunManifest.verify("./results/manifest.json")
 ```
 
 The manifest is the single artefact reviewers should ask for when
-auditing a result. It satisfies the NeurIPS 2025/2026 Reproducibility
+auditing a result. It designed to support the NeurIPS 2025/2026 Reproducibility
 Checklist and the FDA GMLP / EU AI Act Annex IV record-keeping
 obligations (research-grade; not a compliance certification).
 
